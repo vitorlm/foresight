@@ -1,0 +1,14 @@
+[MASTER]
+ignore-patterns=test_.*\.py
+jobs=1
+
+[MESSAGES CONTROL]
+disable=C0111,  # Missing docstring
+        C0103,  # Variable name doesn't conform to snake_case (muitas vezes já coberto pelo flake8)
+        W0511,  # TODO comments
+
+[FORMAT]
+max-line-length=100
+
+[DESIGN]
+max-args=10
