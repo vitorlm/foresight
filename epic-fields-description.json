@@ -1,0 +1,92 @@
+{
+  "description": "This JSON object represents the details of a JIRA epic, including various dates, status information, and work estimates.",
+  "fields": {
+    "key": {
+      "description": "The unique identifier for the JIRA issue. Format: CWS-XXXXX."
+    },
+    "summary": {
+      "description": "A brief summary of the JIRA issue."
+    },
+    "status": {
+      "description": "The current status of the JIRA issue. Values: 01 New, Parked, Discovery, 11 Archived, 6 Epic Backlog, 7 PI Started, Done, Shapping, Shaped, In Design, Tech Refinament, Ready to Develop"
+    },
+    "components": {
+      "description": "List of components associated with the JIRA issue, separated by semicolons."
+    },
+    "planned_start_date": {
+      "description": "The planned start date of the epic. Null if not set."
+    },
+    "planned_end_date": {
+      "description": "The planned end date of the epic. Null if not set."
+    },
+    "start_date": {
+      "description": "The actual start date of the epic. Null if not set."
+    },
+    "due_date": {
+      "description": "The due date of the epic. This date can change during the cycle, based on agreements we should make with the stakeholders. Null if not set."
+    },
+    "end_date": {
+      "description": "The actual end date of the epic. Null if not set."
+    },
+    "status_of_start": {
+      "description": "Define if the epic started on time, delayed or not started yet. Values: Null, 'On Time', 'Delayed', 'Not Started'."
+    },
+    "delay_in_start": {
+      "description": "Define how many days was the delay on the start. Null if not set."
+    },
+    "current_status": {
+      "description": "The current status of the epic, reflecting its progress and timeliness. It considers factors such as completion, archival state, start date, and deadline to provide a quick snapshot of where the item stands in its lifecycle. Values: Null, Delivered, Archived, Not Started, On Track, Near End, Delayed"
+    },
+    "delay_vs_planned": {
+      "description": "Measures working days overdue for epics, showing delays beyond the planned end date or null for archived/unscheduled items. Null if not set."
+    },
+    "updated_status": {
+      "description": "Monitors the current status of epics, reflecting progress from initiation to completion, considering due dates and workflow stages in JIRA. Values: Null, Delivered, Archived, Not Started, On Track, Near End, Due Today, Delayed"
+    },
+    "delay_vs_due_date": {
+      "description": "Calculates the delay of epics in working days, comparing actual or current date against the due date, accounting for completion and archival status. Null if not set."
+    },
+    "days_in_progress": {
+      "type": "integer",
+      "description": "Calculates the number of working days an epic has been in progress, considering its start date, completion status, and current date."
+    },
+    "remaining_work_days": {
+      "type": "integer",
+      "description": "Calculates the number of working days left until the epic's due date, accounting for current date and completion status."
+    },
+    "first_fix_version": {
+      "description": "This field stores the earliest fix version associated with the epic. Data format: QI YYYY/QX CZ (e.g., QI 2024/Q1 C1)."
+    },
+    "cycle": {
+      "description": "The cycle in which the epic is planned. Data format: QX CZ (e.g., Q1 C1)."
+    },
+    "planned_days": {
+      "type": "integer",
+      "description": "The number of days planned for the epic."
+    },
+    "executed_days": {
+      "type": "integer",
+      "description": "The number of days executed for the epic."
+    },
+    "devs_planned": {
+      "type": "integer",
+      "description": "The number of developers planned to work on the epic."
+    },
+    "devs_used": {
+      "type": "integer",
+      "description": "The number of developers actually used for the epic."
+    },
+    "worst_estimate": {
+      "description": "The worst-case estimate for the epic. Null if not set."
+    },
+    "best_estimate": {
+      "description": "The best-case estimate for the epic. Null if not set."
+    },
+    "labels": {
+      "description": "List of labels associated with the JIRA issue, separated by semicolons."
+    },
+    "assignee": {
+      "description": "The user assigned to the JIRA issue."
+    }
+  }
+}

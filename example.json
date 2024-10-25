@@ -1,0 +1,1108 @@
+[
+  {
+    "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+    "id": "1963540",
+    "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/issue/1963540",
+    "key": "CWS-11468",
+    "changelog": {
+      "startAt": 0,
+      "maxResults": 36,
+      "total": 36,
+      "histories": [
+        {
+          "id": "12625323",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=557058%3Af58131cb-b67d-43c7-b30d-6b58d40bd077",
+            "accountId": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+            },
+            "displayName": "Automation for Jira",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "app"
+          },
+          "created": "2024-09-27T09:16:04.297-0300",
+          "items": [
+            {
+              "field": "End date",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10233",
+              "from": null,
+              "fromString": null,
+              "to": "2024-09-27",
+              "toString": "27/Sep/24"
+            }
+          ],
+          "historyMetadata": {}
+        },
+        {
+          "id": "12625316",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-27T09:16:01.449-0300",
+          "items": [
+            {
+              "field": "resolution",
+              "fieldtype": "jira",
+              "fieldId": "resolution",
+              "from": null,
+              "fromString": null,
+              "to": "10000",
+              "toString": "Done"
+            },
+            {
+              "field": "status",
+              "fieldtype": "jira",
+              "fieldId": "status",
+              "from": "10533",
+              "fromString": "7 PI Started",
+              "to": "10097",
+              "toString": "Done"
+            }
+          ]
+        },
+        {
+          "id": "12604637",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-26T09:40:04.859-0300",
+          "items": [
+            {
+              "field": "Epic Child",
+              "fieldtype": "custom",
+              "from": "1978029",
+              "fromString": "CWS-11716",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "12584301",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-24T16:36:28.774-0300",
+          "items": [
+            {
+              "field": "Epic Child",
+              "fieldtype": "custom",
+              "from": "1981686",
+              "fromString": "CWS-11753",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "12505462",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3A96597cfd-b642-4b0c-a1fc-24ff5fd78782",
+            "accountId": "712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782",
+            "emailAddress": "carolina.madeira@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/32"
+            },
+            "displayName": "Carolina Madeira",
+            "active": true,
+            "timeZone": "Brazil/East",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-17T10:49:03.021-0300",
+          "items": [
+            {
+              "field": "Designer",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10197",
+              "from": null,
+              "fromString": null,
+              "to": "633b2b4cf568615bdc7fdfa6",
+              "toString": "Viviane Ferraz",
+              "tmpFromAccountId": null,
+              "tmpToAccountId": "633b2b4cf568615bdc7fdfa6"
+            }
+          ]
+        },
+        {
+          "id": "12505460",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3A96597cfd-b642-4b0c-a1fc-24ff5fd78782",
+            "accountId": "712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782",
+            "emailAddress": "carolina.madeira@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/32"
+            },
+            "displayName": "Carolina Madeira",
+            "active": true,
+            "timeZone": "Brazil/East",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-17T10:48:56.700-0300",
+          "items": [
+            {
+              "field": "labels",
+              "fieldtype": "jira",
+              "fieldId": "labels",
+              "from": null,
+              "fromString": "",
+              "to": null,
+              "toString": "Product"
+            }
+          ]
+        },
+        {
+          "id": "12505459",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3A96597cfd-b642-4b0c-a1fc-24ff5fd78782",
+            "accountId": "712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782",
+            "emailAddress": "carolina.madeira@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:96597cfd-b642-4b0c-a1fc-24ff5fd78782/fa96a78e-3435-4022-b5d8-799020cf1f56/32"
+            },
+            "displayName": "Carolina Madeira",
+            "active": true,
+            "timeZone": "Brazil/East",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-17T10:48:53.565-0300",
+          "items": [
+            {
+              "field": "Appetite",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10459",
+              "from": null,
+              "fromString": null,
+              "to": "11241",
+              "toString": "Small Bet"
+            }
+          ]
+        },
+        {
+          "id": "12416955",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-09T08:42:31.063-0300",
+          "items": [
+            {
+              "field": "duedate",
+              "fieldtype": "jira",
+              "fieldId": "duedate",
+              "from": "2024-09-06",
+              "fromString": "2024-09-06 00:00:00.0",
+              "to": "2024-09-27",
+              "toString": "2024-09-27 00:00:00.0"
+            }
+          ]
+        },
+        {
+          "id": "12406605",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-06T22:33:26.980-0300",
+          "items": [
+            {
+              "field": "Epic Child",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "1981686",
+              "toString": "CWS-11753"
+            }
+          ]
+        },
+        {
+          "id": "12406080",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-06T17:08:50.131-0300",
+          "items": [
+            {
+              "field": "Epic Child",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "1981639",
+              "toString": "CWS-11749"
+            }
+          ]
+        },
+        {
+          "id": "12395184",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-05T18:47:36.553-0300",
+          "items": [
+            {
+              "field": "Planned End Date",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10487",
+              "from": null,
+              "fromString": null,
+              "to": "2024-09-02",
+              "toString": "2/Sep/24"
+            }
+          ]
+        },
+        {
+          "id": "12370797",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-03T17:38:04.999-0300",
+          "items": [
+            {
+              "field": "Planned Start Date",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10357",
+              "from": null,
+              "fromString": null,
+              "to": "2024-08-12",
+              "toString": "12/Aug/24"
+            }
+          ]
+        },
+        {
+          "id": "12364384",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-03T11:10:18.911-0300",
+          "items": [
+            {
+              "field": "assignee",
+              "fieldtype": "jira",
+              "fieldId": "assignee",
+              "from": null,
+              "fromString": null,
+              "to": "6315f4f44fbe9c4bd0eeb752",
+              "toString": "Vitor Mendon\u00e7a",
+              "tmpFromAccountId": null,
+              "tmpToAccountId": "6315f4f44fbe9c4bd0eeb752"
+            }
+          ]
+        },
+        {
+          "id": "12363721",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-03T10:40:47.336-0300",
+          "items": [
+            {
+              "field": "duedate",
+              "fieldtype": "jira",
+              "fieldId": "duedate",
+              "from": null,
+              "fromString": null,
+              "to": "2024-09-06",
+              "toString": "2024-09-06 00:00:00.0"
+            }
+          ]
+        },
+        {
+          "id": "12363717",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-03T10:40:36.319-0300",
+          "items": [
+            {
+              "field": "Start date",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10015",
+              "from": null,
+              "fromString": null,
+              "to": "2024-08-13",
+              "toString": "13/Aug/24"
+            }
+          ]
+        },
+        {
+          "id": "12352871",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=5cae280197a12b0e4027583b",
+            "accountId": "5cae280197a12b0e4027583b",
+            "emailAddress": "mariana.ribeiro@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5cae280197a12b0e4027583b/b512ecde-b1ff-42c3-a735-efcde3d4bd66/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5cae280197a12b0e4027583b/b512ecde-b1ff-42c3-a735-efcde3d4bd66/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5cae280197a12b0e4027583b/b512ecde-b1ff-42c3-a735-efcde3d4bd66/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5cae280197a12b0e4027583b/b512ecde-b1ff-42c3-a735-efcde3d4bd66/32"
+            },
+            "displayName": "Mariana Ribeiro",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-02T14:23:54.000-0300",
+          "items": [
+            {
+              "field": "Epic Child",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "1978029",
+              "toString": "CWS-11716"
+            }
+          ]
+        },
+        {
+          "id": "12352859",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=5cae280197a12b0e4027583b",
+            "accountId": "5cae280197a12b0e4027583b",
+            "emailAddress": "mariana.ribeiro@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5cae280197a12b0e4027583b/b512ecde-b1ff-42c3-a735-efcde3d4bd66/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5cae280197a12b0e4027583b/b512ecde-b1ff-42c3-a735-efcde3d4bd66/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5cae280197a12b0e4027583b/b512ecde-b1ff-42c3-a735-efcde3d4bd66/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/5cae280197a12b0e4027583b/b512ecde-b1ff-42c3-a735-efcde3d4bd66/32"
+            },
+            "displayName": "Mariana Ribeiro",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-09-02T14:23:14.956-0300",
+          "items": [
+            {
+              "field": "Epic Child",
+              "fieldtype": "custom",
+              "from": "1975221",
+              "fromString": "CWS-11656",
+              "to": null,
+              "toString": null
+            }
+          ]
+        },
+        {
+          "id": "12314294",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-28T13:50:27.286-0300",
+          "items": [
+            {
+              "field": "Epic Child",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "1975221",
+              "toString": "CWS-11656"
+            }
+          ]
+        },
+        {
+          "id": "12176640",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-13T17:34:06.811-0300",
+          "items": [
+            {
+              "field": "Epic Child",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "1965883",
+              "toString": "CWS-11509"
+            }
+          ]
+        },
+        {
+          "id": "12176436",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-13T16:55:25.408-0300",
+          "items": [
+            {
+              "field": "Epic Child",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "1965872",
+              "toString": "CWS-11508"
+            }
+          ]
+        },
+        {
+          "id": "12176418",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-13T16:51:17.494-0300",
+          "items": [
+            {
+              "field": "Epic Child",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "1965869",
+              "toString": "CWS-11507"
+            }
+          ]
+        },
+        {
+          "id": "12176406",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=557058%3Af58131cb-b67d-43c7-b30d-6b58d40bd077",
+            "accountId": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+            },
+            "displayName": "Automation for Jira",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "app"
+          },
+          "created": "2024-08-13T16:48:51.875-0300",
+          "items": [
+            {
+              "field": "Commitment",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10196",
+              "from": null,
+              "fromString": null,
+              "to": "2024-08-13T16:48:51-0300",
+              "toString": "13/Aug/24 4:48 PM"
+            },
+            {
+              "field": "status",
+              "fieldtype": "jira",
+              "fieldId": "status",
+              "from": "10532",
+              "fromString": "6 Epic Backlog",
+              "to": "10533",
+              "toString": "7 PI Started"
+            }
+          ],
+          "historyMetadata": {}
+        },
+        {
+          "id": "12176405",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=557058%3Af58131cb-b67d-43c7-b30d-6b58d40bd077",
+            "accountId": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+            },
+            "displayName": "Automation for Jira",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "app"
+          },
+          "created": "2024-08-13T16:48:50.999-0300",
+          "items": [
+            {
+              "field": "status",
+              "fieldtype": "jira",
+              "fieldId": "status",
+              "from": "10464",
+              "fromString": "6 Next PI",
+              "to": "10532",
+              "toString": "6 Epic Backlog"
+            }
+          ],
+          "historyMetadata": {}
+        },
+        {
+          "id": "12176390",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-13T16:48:15.401-0300",
+          "items": [
+            {
+              "field": "Epic Child",
+              "fieldtype": "custom",
+              "from": null,
+              "fromString": null,
+              "to": "1965868",
+              "toString": "CWS-11506"
+            }
+          ]
+        },
+        {
+          "id": "12176376",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-13T16:46:44.150-0300",
+          "items": [
+            {
+              "field": "Development type",
+              "fieldtype": "custom",
+              "fieldId": "customfield_10735",
+              "from": null,
+              "fromString": null,
+              "to": "12424",
+              "toString": "Frontend"
+            }
+          ]
+        },
+        {
+          "id": "12147753",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-09T14:39:50.334-0300",
+          "items": [
+            {
+              "field": "RemoteIssueLink",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "94780",
+              "toString": "Este item tem link para \"Page (Confluence)\""
+            }
+          ]
+        },
+        {
+          "id": "12146461",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-09T11:23:15.137-0300",
+          "items": [
+            {
+              "field": "status",
+              "fieldtype": "jira",
+              "fieldId": "status",
+              "from": "10900",
+              "fromString": "4B1 Refinement",
+              "to": "10464",
+              "toString": "6 Next PI"
+            }
+          ]
+        },
+        {
+          "id": "12146460",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-09T11:23:13.127-0300",
+          "items": [
+            {
+              "field": "status",
+              "fieldtype": "jira",
+              "fieldId": "status",
+              "from": "10461",
+              "fromString": "4b Request for Comments",
+              "to": "10900",
+              "toString": "4B1 Refinement"
+            }
+          ]
+        },
+        {
+          "id": "12146459",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-09T11:23:10.962-0300",
+          "items": [
+            {
+              "field": "status",
+              "fieldtype": "jira",
+              "fieldId": "status",
+              "from": "10899",
+              "fromString": "4A2 Technical Discovery",
+              "to": "10461",
+              "toString": "4b Request for Comments"
+            }
+          ]
+        },
+        {
+          "id": "12146458",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-09T11:23:09.014-0300",
+          "items": [
+            {
+              "field": "status",
+              "fieldtype": "jira",
+              "fieldId": "status",
+              "from": "10898",
+              "fromString": "4A1 Waiting Technical Discovery",
+              "to": "10899",
+              "toString": "4A2 Technical Discovery"
+            }
+          ]
+        },
+        {
+          "id": "12146457",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-09T11:23:04.848-0300",
+          "items": [
+            {
+              "field": "status",
+              "fieldtype": "jira",
+              "fieldId": "status",
+              "from": "10329",
+              "fromString": "02 Review",
+              "to": "10898",
+              "toString": "4A1 Waiting Technical Discovery"
+            }
+          ]
+        },
+        {
+          "id": "12146456",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-09T11:23:01.504-0300",
+          "items": [
+            {
+              "field": "status",
+              "fieldtype": "jira",
+              "fieldId": "status",
+              "from": "10328",
+              "fromString": "01 New",
+              "to": "10329",
+              "toString": "02 Review"
+            }
+          ]
+        },
+        {
+          "id": "12145545",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=712020%3Aab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "accountId": "712020:ab420410-b73b-497e-b591-5f5dbcf68c5a",
+            "emailAddress": "andrea.zambrana@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/48",
+              "24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/24",
+              "16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/16",
+              "32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ab420410-b73b-497e-b591-5f5dbcf68c5a/5a7709fd-b40d-4b41-9275-5c366a105136/32"
+            },
+            "displayName": "Andrea Zambrana",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-09T10:23:02.404-0300",
+          "items": [
+            {
+              "field": "RemoteIssueLink",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "94730",
+              "toString": "Este item tem link para \"Page (Confluence)\""
+            }
+          ]
+        },
+        {
+          "id": "12143961",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-09T09:35:38.368-0300",
+          "items": [
+            {
+              "field": "description",
+              "fieldtype": "jira",
+              "fieldId": "description",
+              "from": null,
+              "fromString": "The Hall of Entities is a critical component of our platform, designed to centralize and streamline the navigation and management of workspaces and organizations across all products. This epic is the first milestone in delivering the Hall of Entities microfrontend, focusing on implementing the new UI design and integrating with existing backend APIs. This version will not involve any new or modified APIs; instead, it will work with the current API setup to ensure a smooth transition and provide immediate value.\n\nAs part of this milestone, we will develop several new front-end components that align with the updated design system. These components will include lists of workspaces and organizations, search functionality, pagination, and more action buttons. The goal is to lay a strong foundation for future enhancements that will include handling implicit and explicit organizations, product-specific contract views, and advanced editing capabilities.",
+              "to": null,
+              "toString": "The *Hall of Entities* is a new component of our platform, designed to centralize and streamline the navigation and management of workspaces and organizations across all products. This epic is the{color:#ff5630} {color}first milestone in delivering the Hall of Entities microfrontend, focusing on implementing {color:#ff5630}*the new UI design and integrating with existing backend APIs*{color}. \n\n{color:#ff5630}*This version will not involve any new or modified APIs;*{color} instead, it will work with the current API setup to ensure a smooth transition and provide immediate value.\n\nAs part of this milestone, we will develop several new front-end components that align with the updated design system. These components will include lists of workspaces and organizations, search functionality, pagination, and more action buttons. The goal is to lay a strong foundation for future enhancements that will include handling implicit and explicit organizations, product-specific contract views, and advanced editing capabilities."
+            }
+          ]
+        },
+        {
+          "id": "12143901",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=557058%3Af58131cb-b67d-43c7-b30d-6b58d40bd077",
+            "accountId": "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "24x24": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "16x16": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png",
+              "32x32": "https://secure.gravatar.com/avatar/600529a9c8bfef89daa848e6db28ed2d?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAJ-0.png"
+            },
+            "displayName": "Automation for Jira",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "app"
+          },
+          "created": "2024-08-09T09:32:14.718-0300",
+          "items": [
+            {
+              "field": "LinearBTeamID",
+              "fieldtype": "custom",
+              "fieldId": "customfield_12046",
+              "from": null,
+              "fromString": null,
+              "to": null,
+              "toString": "41576"
+            }
+          ],
+          "historyMetadata": {}
+        },
+        {
+          "id": "12143898",
+          "author": {
+            "self": "https://digitial-product-engineering.atlassian.net/rest/api/3/user?accountId=6315f4f44fbe9c4bd0eeb752",
+            "accountId": "6315f4f44fbe9c4bd0eeb752",
+            "emailAddress": "vitor.mendonca@syngenta.com",
+            "avatarUrls": {
+              "48x48": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "24x24": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "16x16": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png",
+              "32x32": "https://secure.gravatar.com/avatar/159b7a896d52ff624bda604ef80d153b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FVM-3.png"
+            },
+            "displayName": "Vitor Mendon\u00e7a",
+            "active": true,
+            "timeZone": "America/Sao_Paulo",
+            "accountType": "atlassian"
+          },
+          "created": "2024-08-09T09:32:10.624-0300",
+          "items": [
+            {
+              "field": "IssueParentAssociation",
+              "fieldtype": "jira",
+              "from": null,
+              "fromString": null,
+              "to": "1953804",
+              "toString": "CWS-11345"
+            }
+          ]
+        }
+      ]
+    },
+    "fields": {
+      "statuscategorychangedate": "2024-09-27T09:16:01.450-0300",
+      "summary": "[FE] Deliver initial Hall of Entities microfrontend using current APIs, focusing on UI and design system",
+      "created": "2024-08-09T09:32:10.524-0300"
+    }
+  }
+]
