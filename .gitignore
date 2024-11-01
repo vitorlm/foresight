@@ -199,3 +199,6 @@ docker-compose.override.yml
 # JetBrains Rider
 .idea/
 out/
+
+cache/
+logs/

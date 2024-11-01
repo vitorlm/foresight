@@ -1,0 +1,88 @@
+{
+  "project_key": "CWS",
+  "issuetype": "Sub-task",
+  "parent": "CWS-12405",
+  "squad": "Catalog",
+  "issues": [
+    {
+      "summary": "[BE][Refinement] Enhanced Customization and ERP Integration for Crop Protection Products",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-8263"
+    },
+    {
+      "summary": "[BE][Refinement] Transition api-node-cropwise-notes and api-node-cropwise-custom-attribute from AWS Lambda to ECS/EKS",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-12386"
+    },
+    {
+      "summary": "[FE][Refinement] Implement configurable front-end catalog filters for user-driven customization, focusing on favorites and hide functionalities",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-11386"
+    },
+    {
+      "summary": "[FE][Refinement] Productize CW Elements with clear scope, creation standards, and documentation practices",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-10575"
+    },
+    {
+      "summary": "[INFRA][Refinement] Improve monitoring, alerting, and incident response for Catalog services using DataDog and Opsgenie",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-11984"
+    },
+    {
+      "summary": "[Refinement] Complete Demeter handoff, monitor usage, remove resources, and transfer ownership",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-11831"
+    },
+    {
+      "summary": "[FE][Refinement] Add the new workspace type for field production on the Staff Console",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-12351"
+    },
+    {
+      "summary": "[BE][Refinement] Ensure the Sampling work record fits Planting use case 2",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-12326"
+    },
+    {
+      "summary": "[FE][Refinement] Implement divisions and map functionality for Hall of Entities",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-12324"
+    },
+    {
+      "summary": "[BE][Refinement] Get Item and Fertilizer data from Agrian",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-12317"
+    },
+    {
+      "summary": "[BE][Refinement] Enhancing CP Catalog with Product Efficacy Data",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-12315"
+    },
+    {
+      "summary": "[BE][Refinement] Migrate orgs to Tube-based CP catalog, ensuring data completeness and custom product creation",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-10327"
+    },
+    {
+      "summary": "[FE][Refinement] Create the farm field tree navigation for the product top bar",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-12301"
+    },
+    {
+      "summary": "[FE][Refinement] Deliver enhancements to Fertilizer MFE for consistency with new Inputs MFE",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-11122"
+    },
+    {
+      "summary": "[FE][Refinement] Deliver enhancements to Crop Protection MFE for consistency with new Inputs MFE",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-11138"
+    },
+    {
+      "summary": "[FE][Refinement] Improve Other Categories MFE UI/UX and backend for integration into unified Inputs screen",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-11113"
+    },
+    {
+      "summary": "[FE][Refinement] Enhance and document the translation process to improve clarity and efficiency in Cropwise products",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-11312"
+    },
+    {
+      "summary": "[FE][Refinement] Integrate Notes library into CW Elements as a micro-frontend for improved efficiency and maintainability",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-10154"
+    },
+    {
+      "summary": "[FE][Refinement] Develop a Micro Frontend for creating and editing organizations with enhanced functionality and performance",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-11343"
+    },
+    {
+      "summary": "[FE][Refinement] Enhance Contacts Page: New Fields, CSV Export, Multi-select, and Contact as a Member",
+      "description": "Epic Link: https://digitial-product-engineering.atlassian.net/browse/CWS-11333"
+    }
+  ]
+}

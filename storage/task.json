@@ -1,0 +1,7 @@
+{
+  "project_key": "CWS",
+  "issuetype": "Task",
+  "components": ["CW Catalogs"],
+  "summary": "[Catalog Team] Epic Refinement and Planning for Next Cycle",
+  "description": "The purpose of this task is to refine the existing epics and plan for the next release cycle. The subtasks under this parent task will include reviewing and updating epic descriptions, verifying and refining epic objectives, identifying and documenting new requirements, prioritizing the epics, estimating effort, creating task breakdowns, and assigning owners."
+}
