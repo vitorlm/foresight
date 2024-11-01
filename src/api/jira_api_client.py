@@ -22,6 +22,7 @@ class JiraApiClient:
         self.headers = {
             "Accept": "application/json",
             "Content-Type": "application/json",
+            "Connection": "keep-alive",
         }
 
     def get(self, endpoint, params=None):
@@ -42,6 +43,9 @@ class JiraApiClient:
     def post(self, endpoint, payload):
         """Make a POST request to the Jira API."""
         try:
+            self.headers.update({"Accept": "*/*"})
+            self.headers.pop("Accept-Encoding", "gzip, deflate, br")
+
             response = requests.post(
                 f"{self.base_url}{endpoint}",
                 json=payload,

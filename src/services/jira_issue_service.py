@@ -1,6 +1,8 @@
 import datetime
 import logging
 
+from atlassian_doc_builder import ADFDoc, ADFParagraph, ADFText
+
 from src.api.factory import JiraApiFactory
 from src.services.cache_manager import CacheManager
 from src.utils.error_handler import handle_generic_exception
@@ -193,72 +195,360 @@ class JiraIssueService:
             )
             return None
 
-    def fill_missing_dates_for_completed_epics(self, team_name):
+    def get_issuetype_metadata(self, project_key, issue_type_id):
         """
-        Fetch completed epics with missing start or end dates and update them using changelog data.
+        Fetch metadata for a specific issue type in a project.
 
-        :param team_name: The name of the team to filter epics.
-        :param time_period_days: Number of days in the past to search.
+        :param project_key: The key of the Jira project.
+        :param issue_type_id: The ID of the issue type.
+        :return: Metadata of the specified issue type.
         """
         try:
-            # JQL to find completed epics with missing start or end dates
-            jql_query = (
-                f"project = 'Cropwise Core Services' AND type = Epic AND status = Done "
-                f"AND 'Squad[Dropdown]' = '{team_name}' AND ("
-                f"'Start date' is EMPTY OR 'End date' is EMPTY)"
+            cache_file = f"issuetype_metadata_{project_key}_{issue_type_id}.json"
+            cached_data = self.cache_manager.load_from_cache(
+                cache_file, expiration_minutes=60
             )
+            if cached_data:
+                logger.info(
+                    f"Loaded metadata from cache for issue type '{issue_type_id}' "
+                    f"in project '{project_key}'."
+                )
+                return cached_data
+
+            endpoint = f"issue/createmeta/{project_key}/issuetypes/{issue_type_id}"
             logger.info(
-                f"Fetching completed epics with missing dates for team '{team_name}'."
+                f"Fetching metadata for issue type '{issue_type_id}' in project '{project_key}'"
             )
-            epics = self.fetch_issues(
-                jql_query, fields="key,summary,changelog", expand_changelog=True
-            )
+            response = self.client.get(endpoint)
 
-            if not epics:
-                logger.info("No completed epics with missing dates found.")
-                return
-
-            for epic in epics:
-                issue_key = epic["key"]
-                changelog = epic.get("changelog", {}).get("histories", [])
-                start_date = None
-                end_date = None
-
-                # Iterate over changelog histories to find appropriate dates
-                for history in changelog:
-                    for item in history.get("items", []):
-                        # Find "7 PI Started" creation (start date)
-                        if item.get("toString") == "7 PI Started" and not start_date:
-                            start_date = datetime.datetime.strptime(
-                                history["created"], "%Y-%m-%dT%H:%M:%S.%f%z"
-                            ).date()
-
-                        # Find transition from "7 PI Started" to "Done" (end date)
-                        if (
-                            item.get("fromString") == "7 PI Started"
-                            and item.get("toString") == "Done"
-                            and not end_date
-                        ):
-                            end_date = datetime.datetime.strptime(
-                                history["created"], "%Y-%m-%dT%H:%M:%S.%f%z"
-                            ).date()
-
-                        # Stop if both dates are found
-                        if start_date and end_date:
-                            break
-
-                if start_date or end_date:
-                    logger.info(
-                        (
-                            f"Updating epic '{issue_key}' with found dates: "
-                            f"Start - {start_date}, End - {end_date}"
-                        )
-                    )
-                    self.update_epic_dates(
-                        issue_key, start_date=start_date, end_date=end_date
-                    )
+            if response:
+                logger.info(
+                    f"Retrieved metadata for issue type '{issue_type_id}' "
+                    f"in project '{project_key}'"
+                )
+                self.cache_manager.save_to_cache(cache_file, response)
+                return response
+            else:
+                logger.warning(
+                    f"No metadata found for issue type '{issue_type_id}' in project '{project_key}'"
+                )
+                return None
 
         except Exception as e:
             handle_generic_exception(
-                e, "Failed to fill missing dates for completed epics"
+                e,
+                f"Failed to fetch metadata for issue type '{issue_type_id}' "
+                f"in project '{project_key}'",
             )
+            return None
+
+    def fetch_issuetypes(self, project_key):
+        """
+        Fetch issue types available for a specific project.
+
+        :param project_key: The key of the Jira project.
+        :return: List of issue types for the specified project.
+        """
+        try:
+            cache_file = f"issuetypes_{project_key}.json"
+            cached_data = self.cache_manager.load_from_cache(
+                cache_file, expiration_minutes=60
+            )
+            if cached_data:
+                logger.info(
+                    f"Loaded issue types from cache for project '{project_key}'."
+                )
+                return cached_data
+
+            endpoint = f"issue/createmeta/{project_key}/issuetypes"
+            logger.info(f"Fetching create metadata for project '{project_key}'")
+            response = self.client.get(endpoint)
+
+            if response:
+                logger.info(f"Retrieved issue metadata for project '{project_key}'")
+                self.cache_manager.save_to_cache(cache_file, response)
+                return response
+            else:
+                logger.warning(f"No metadata found for project '{project_key}'")
+                return None
+
+        except Exception as e:
+            handle_generic_exception(
+                e, f"Failed to fetch issue metadata for project '{project_key}'"
+            )
+            return None
+
+    def create_issue(self, project_key, issue_data):
+        """
+        Create multiple Jira issues based on the provided data.
+
+        :param project_key: The project key.
+        :param issue_data: Dictionary with 'summary', 'description', etc.
+        :return: Response from Jira API.
+        """
+        try:
+            response = self.client.post(
+                "issue",
+                issue_data,
+            )
+
+            if response:
+                logger.info(
+                    f"Issue created in project '{project_key}' with key: {response['key']}"
+                )
+                return response
+            else:
+                logger.warning(
+                    f"Issue creation returned no response for project '{project_key}'"
+                )
+                return None
+
+        except Exception as e:
+            handle_generic_exception(e, "Failed to create a single issue")
+            return None
+
+    def create_bulk_issues(self, project_key, issues_data):
+        """
+        Create a single Jira issue based on the metadata.
+
+        :param project_key: The project key.
+        :param issuetype: The issue type name.
+        :param issues_data: A JSON serializable Python object with a list of dictionaries,
+                            each representing an issue to be created.
+        """
+        try:
+            response = self.client.post(
+                "issue/bulk",
+                issues_data,
+            )
+
+            if response:
+                logger.info(f"Issues created in project '{project_key}'")
+                return response
+            else:
+                logger.warning(
+                    f"Issues creation returned no response for project '{project_key}'"
+                )
+                return None
+
+        except Exception as e:
+            handle_generic_exception(
+                e, f"Failed to create issues in bulk for project '{project_key}'"
+            )
+            return None
+
+    def get_project(self, project_key):
+        """
+        Fetch data for a specific Jira project.
+
+        :param project_key: The key or ID of the Jira project.
+        :return: Project data as a dictionary.
+        """
+        try:
+            # Cache filename based on project key
+            cache_file = f"project_data_{project_key}.json"
+            cached_data = self.cache_manager.load_from_cache(
+                cache_file, expiration_minutes=60
+            )
+
+            if cached_data:
+                logger.info(
+                    f"Loaded project data from cache for project '{project_key}'."
+                )
+                return cached_data
+
+            # API endpoint to fetch project data
+            endpoint = f"project/{project_key}"
+            logger.info(f"Fetching data for project '{project_key}' from Jira API")
+
+            # Call the Jira API to get project data
+            project_data = self.client.get(endpoint)
+
+            # Cache the result if fetched successfully
+            if project_data:
+                logger.info(
+                    f"Successfully fetched project data for project '{project_key}'"
+                )
+                self.cache_manager.save_to_cache(cache_file, project_data)
+                return project_data
+            else:
+                logger.warning(f"No data returned for project '{project_key}'")
+                return None
+
+        except Exception as e:
+            handle_generic_exception(
+                e, f"Failed to fetch project data for project '{project_key}'"
+            )
+            return None
+
+    def build_payload_from_metadata(
+        self, project_key, issuetype_id, issue_data, metadata
+    ):
+        """
+        Build a payload for creating a Jira issue based on the issue type metadata.
+
+        :param project_key: The project key where the issue will be created.
+        :param issuetype_id: The ID of the issue type.
+        :param issue_data: A dictionary containing the issue details.
+        :return: A dictionary representing the payload.
+        """
+
+        if "project_key" in issue_data:
+            project_data = self.get_project(issue_data["project_key"])
+            if not project_data:
+                raise ValueError(f"Project '{issue_data['project_key']}' not found.")
+            issue_data["project"] = project_data.get("id")
+            del issue_data["project_key"]
+
+        payload_fields = {}
+        required_fields = {
+            field["key"]: field for field in metadata["fields"] if field["required"]
+        }
+
+        # Define type handling functions
+        def handle_string(field, value):
+            return value
+
+        def handle_adf_string(value):
+            """
+            Converts a string to ADF format.
+            """
+            doc = ADFDoc()  # Inicializa um documento ADF
+            paragraph = ADFParagraph()  # Cria um parágrafo ADF
+            paragraph.add(ADFText(value))  # Adiciona o texto ao parágrafo usando `add`
+            doc.add(paragraph)  # Adiciona o parágrafo ao documento
+            return doc.validate()  # Valida e retorna o documento ADF formatado
+
+        def handle_array(field, value):
+            allowed_values = {}
+            for v in field.get("allowedValues", []):
+                allowed_values[v["name"]] = v["id"]
+
+            if allowed_values:
+                # Validate each item in array
+                invalid_items = [item for item in value if item not in allowed_values]
+                if invalid_items:
+                    raise ValueError(
+                        f"Invalid values '{invalid_items}' for field '{field['key']}'."
+                    )
+                return [{"id": allowed_values[item]} for item in value]
+            return value
+
+        def handle_attachment(field, value):
+            return [{"id": v} for v in value]
+
+        def handle_boolean(field, value):
+            if not isinstance(value, bool):
+                raise ValueError(
+                    f"Expected boolean for '{field['key']}', got {type(value).__name__}."
+                )
+            return value
+
+        def handle_component(field, value):
+            return [{"id": v} for v in value]
+
+        def handle_date(field, value):
+            if not isinstance(value, str) or len(value.split("-")) != 3:
+                raise ValueError(
+                    f"Expected date format 'YYYY-MM-DD' for '{field['key']}'."
+                )
+            return value
+
+        def handle_issuetype(field, value):
+            return {"id": issuetype_id}
+
+        def handle_number(field, value):
+            if not isinstance(value, (int, float)):
+                raise ValueError(
+                    f"Expected number for '{field['key']}', got {type(value).__name__}."
+                )
+            return value
+
+        def handle_option(field, value):
+            allowed_values = {
+                v["value"]: v["id"] for v in field.get("allowedValues", [])
+            }
+            if value not in allowed_values:
+                raise ValueError(f"Invalid value '{value}' for field '{field['key']}'.")
+            return {"id": allowed_values[value]}
+
+        def handle_priority(field, value):
+            allowed_values = {
+                v["name"]: v["id"] for v in field.get("allowedValues", [])
+            }
+            if value not in allowed_values:
+                raise ValueError(
+                    f"Invalid value '{value}' for priority field '{field['key']}'."
+                )
+            return {"id": allowed_values[value]}
+
+        def handle_project(field, value):
+            return {"id": value}
+
+        def handle_user(field, value):
+            return {"accountId": value}
+
+        def handle_version(field, value):
+            return [{"id": v} for v in value]
+
+        def handle_issuelink(field, value):
+            return {"key": value}
+
+        # Map of field types to handler functions
+        field_handlers = {
+            "string": handle_string,
+            "array": handle_array,
+            "attachment": handle_attachment,
+            "boolean": handle_boolean,
+            "component": handle_component,
+            "date": handle_date,
+            "datetime": handle_date,
+            "issuetype": handle_issuetype,
+            "number": handle_number,
+            "option": handle_option,
+            "priority": handle_priority,
+            "project": handle_project,
+            "user": handle_user,
+            "version": handle_version,
+            "issuelink": handle_issuelink,
+            "parent": handle_issuelink,
+        }
+
+        # Process each field in `issue_data`
+        for field_key, field_value in issue_data.items():
+            field_metadata = next(
+                (f for f in metadata["fields"] if f["key"] == field_key), None
+            )
+
+            if not field_metadata:
+                raise ValueError(
+                    f"Field '{field_key}' is not valid for this issue type."
+                )
+
+            field_type = field_metadata["schema"]["type"]
+            field_id = field_metadata["fieldId"]
+
+            # Specific handling for ADF fields
+            if field_key in ["description", "environment"] and field_type == "string":
+                payload_fields[field_id] = handle_adf_string(field_value)
+            else:
+                handler = field_handlers.get(field_type)
+                if handler:
+                    payload_fields[field_id] = handler(field_metadata, field_value)
+                else:
+                    raise ValueError(
+                        f"No handler for field type '{field_type}' on field '{field_key}'."
+                    )
+
+        # Ensure all required fields are provided or have default values
+        missing_fields = [
+            key
+            for key, field in required_fields.items()
+            if key not in issue_data and not field.get("hasDefaultValue", False)
+        ]
+        if missing_fields:
+            raise ValueError(
+                f"Missing required fields without default values: {', '.join(missing_fields)}"
+            )
+
+        return {"fields": payload_fields, "update": {}}

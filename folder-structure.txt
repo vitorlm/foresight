@@ -2,9 +2,6 @@
 ├── Catalog - Planning-2024.xlsm
 ├── Readme.md
 ├── cache
-│   ├── completed_epics_cache.json
-│   ├── issues_cache_1484619010476779926.json
-│   └── open_epics_cache.json
 ├── combined_epics.json
 ├── data
 │   └── Catalog - Planning-2024.xlsm
@@ -12,7 +9,6 @@
 ├── example.json
 ├── folder-structure.txt
 ├── logs
-│   └── application.log
 ├── requirements.txt
 └── src
     ├── __init__.py
@@ -38,5 +34,3 @@
     │   ├── error_handler.py
     │   └── logging_config.py
     └── utils.py
-
-10 directories, 30 files
